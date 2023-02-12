@@ -3,6 +3,21 @@ body {
   background-color: #011F3F;
 }
 
+.start{
+  width: 78px;
+  height: 47px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 28px;
+  padding: 12px 18px 13px;
+  font-family: math;
+  border: 2px solid black;
+  border-radius: 14px;
+}
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
