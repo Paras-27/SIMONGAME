@@ -5,11 +5,13 @@ var userClickedPattern=[];
 var started=0;
 var level=0;
 
-$(document).keypress(function(){
+$(".start").click(function(){
     if(!started){
         $("#level-title").text("level "+level);
         nextSequence();
         started=true;
+        var element = document.getElementById("remove");
+        element.style.display = "none";
     }
 })
 $(".btn").click(function (){
@@ -32,7 +34,9 @@ function checkAnswer(currentLevel){
     else{
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over , Press Any Key to Restart ");
+        $("#level-title").text("Game Over , PLAY AGAIN");
+        var element = document.getElementById("remove");
+        element.style.display = "flex";
         setTimeout(function(){
             $("body").removeClass("game-over");
         },200);
