@@ -34,7 +34,7 @@ function checkAnswer(currentLevel){
     else{
         playSound("wrong");
         $("body").addClass("game-over");
-        $("#level-title").text("Game Over , PLAY AGAIN");
+        $("#level-title").text("GAME OVER Your Score is " +level*100);
         var element = document.getElementById("remove");
         element.style.display = "flex";
         setTimeout(function(){
